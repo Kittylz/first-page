@@ -1,5 +1,5 @@
 body {
-    background-color: #f1d5da; /* 浅粉色 */
+    background-color: #ffffff; /* 浅粉色 */
     text-align: center;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -54,7 +54,7 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #ffdae0; /* 粉色 */
+    background-color: #ffffff; /* 粉色 */
     display: flex;
     flex-direction: column;
     align-items: center;
