@@ -29,7 +29,7 @@ const $ = (selector, root = document) => root.querySelector(selector);
 /** Menu heading for one pet, matching the Windows context menu wording. */
 function menuTitle(config) {
   if (config.id === "fengge") return `好事桌宠 · ${config.clipCount} 句原声`;
-  if (config.id === "sunpet") return `孙宇晨 · 太对了（${config.clipCount} 句）`;
+  if (config.id === "sunpet") return `孙哥（${config.clipCount} 句）`;
   return `${config.name}（${config.clipCount} 句）`;
 }
 
