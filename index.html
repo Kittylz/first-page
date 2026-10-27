@@ -1,21 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>可以成为我的妈妈吗？</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>桌面宠物 · 邵艾伦 / 太对了 / 峰哥</title>
+<meta name="description" content="邵艾伦、太对了和峰哥的网页桌宠：点击说话、拖动移动、三只自动接话。原 Windows 桌宠的浏览器版。">
+<meta name="theme-color" content="#070a11">
+<meta property="og:title" content="桌面宠物 · 网页版">
+<meta property="og:description" content="点击说话，拖动移动，三只自动接话。">
+<link rel="icon" href="assets/shaolan/face.png">
+<link rel="stylesheet" href="css/site.css">
+<script type="module" src="js/app.js"></script>
 </head>
-<body>
-    <div class="container">
-        <img id="mainImage" src="heart.png" alt="爱心">
-        <h1 id="question">可以成为我的妈妈吗？</h1>
-        <div class="buttons">
-            <button id="yes">可以</button>
-            <button id="no">不要</button>
-        </div>
-    </div>
+<body class="booting">
 
-    <script src="script.js"></script>
+<div class="scene" aria-hidden="true">
+  <div class="glow glow-left"></div>
+  <div class="glow glow-right"></div>
+  <div class="floor"></div>
+</div>
+
+<header class="hud">
+  <p class="kicker">Windows 桌宠 · 网页版</p>
+  <h1>邵艾伦<span>·</span>太对了<span>·</span>峰哥</h1>
+  <p class="hint">点击人物说一句 · 拖动移动 · 右键或长按打开菜单</p>
+  <div class="actions">
+    <button id="try" class="primary" type="button">让邵艾伦说一句</button>
+  </div>
+  <p class="status" id="status" role="status" aria-live="polite">语音装载中…</p>
+</header>
+
+<div id="pets" class="pets"></div>
+
+<div id="menu" class="menu" role="menu" tabindex="-1" hidden></div>
+
+<div id="backdrop" class="backdrop" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="轮播内容"></div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<p class="credit">素材与原始项目 © <a href="https://github.com/Ganzhe2028" rel="noreferrer noopener" target="_blank">Ganzhe2028</a> · 代码 MIT</p>
+
+<noscript>
+  <p class="noscript">这个页面需要 JavaScript 才能播放语音。</p>
+</noscript>
+
 </body>
 </html>

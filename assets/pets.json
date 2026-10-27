@@ -1,0 +1,859 @@
+{
+  "version": 1,
+  "rate": 44100,
+  "pets": [
+    {
+      "id": "shaolan",
+      "role": "shaolan",
+      "name": "邵艾伦",
+      "tagline": "点我说一句",
+      "source": "ShaolanPet",
+      "audio": "wav",
+      "downmix": false,
+      "accent": "#7cc4ff",
+      "sizeSteps": [
+        190,
+        260,
+        340
+      ],
+      "sizeLabels": [
+        "小",
+        "中",
+        "大"
+      ],
+      "defaultSize": 260,
+      "minSize": 160,
+      "maxSize": 400,
+      "motion": "squash",
+      "selectable": true,
+      "captionSize": 13,
+      "sizeMenu": "人物大小",
+      "clipCount": 37,
+      "defaultOnCount": 8,
+      "clips": [
+        {
+          "id": 1,
+          "label": "是我我也崩",
+          "file": "01.wav",
+          "duration": 0.81,
+          "speechStart": 0,
+          "speechEnd": 0.695,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 2,
+          "label": "怎么可能",
+          "file": "02.wav",
+          "duration": 0.727,
+          "speechStart": 0,
+          "speechEnd": 0.64,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 3,
+          "label": "没有意义",
+          "file": "03.wav",
+          "duration": 0.996,
+          "speechStart": 0.087,
+          "speechEnd": 0.996,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 4,
+          "label": "天赋没什么好聊的",
+          "file": "04.wav",
+          "duration": 1.61,
+          "speechStart": 0.181,
+          "speechEnd": 1.61,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 5,
+          "label": "不要找理由",
+          "file": "05.wav",
+          "duration": 1.15,
+          "speechStart": 0,
+          "speechEnd": 1.15,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 6,
+          "label": "不要去骗自己",
+          "file": "06.wav",
+          "duration": 1.07,
+          "speechStart": 0.001,
+          "speechEnd": 0.977,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 7,
+          "label": "AI 救不了你",
+          "file": "07.wav",
+          "duration": 1.19,
+          "speechStart": 0,
+          "speechEnd": 1.19,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 8,
+          "label": "Let's do it",
+          "file": "08.wav",
+          "duration": 1.07,
+          "speechStart": 0,
+          "speechEnd": 1.07,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 9,
+          "label": "bro",
+          "file": "09.wav",
+          "duration": 0.77,
+          "speechStart": 0,
+          "speechEnd": 0.741,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 10,
+          "label": "何必呢 对吧",
+          "file": "10.wav",
+          "duration": 1.35,
+          "speechStart": 0,
+          "speechEnd": 1.35,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 11,
+          "label": "比你想象的还要难",
+          "file": "11.wav",
+          "duration": 2.063,
+          "speechStart": 0,
+          "speechEnd": 1.985,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 12,
+          "label": "总感觉不得劲",
+          "file": "12.wav",
+          "duration": 1.17,
+          "speechStart": 0,
+          "speechEnd": 1.14,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 13,
+          "label": "下一个",
+          "file": "13.wav",
+          "duration": 1.25,
+          "speechStart": 0,
+          "speechEnd": 1.25,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 14,
+          "label": "恰恰相反",
+          "file": "14.wav",
+          "duration": 1.301,
+          "speechStart": 0,
+          "speechEnd": 1.198,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 15,
+          "label": "doesn't matter",
+          "file": "15.wav",
+          "duration": 1.07,
+          "speechStart": 0,
+          "speechEnd": 1.035,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 16,
+          "label": "数字不会骗人",
+          "file": "16.wav",
+          "duration": 1.5,
+          "speechStart": 0.019,
+          "speechEnd": 1.5,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 17,
+          "label": "我不相信你没有空健身",
+          "file": "17.wav",
+          "duration": 1.87,
+          "speechStart": 0,
+          "speechEnd": 1.733,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 18,
+          "label": "不要怕",
+          "file": "18.wav",
+          "duration": 0.65,
+          "speechStart": 0,
+          "speechEnd": 0.65,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 19,
+          "label": "蛋白粉不是科技",
+          "file": "19.wav",
+          "duration": 1.43,
+          "speechStart": 0,
+          "speechEnd": 1.43,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 20,
+          "label": "当然可以吃",
+          "file": "20.wav",
+          "duration": 1.004,
+          "speechStart": 0,
+          "speechEnd": 0.913,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 21,
+          "label": "不用问我",
+          "file": "21.wav",
+          "duration": 0.762,
+          "speechStart": 0,
+          "speechEnd": 0.676,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 22,
+          "label": "没有欺骗餐",
+          "file": "22.wav",
+          "duration": 1.319,
+          "speechStart": 0,
+          "speechEnd": 1.206,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 23,
+          "label": "不开倒车",
+          "file": "23.wav",
+          "duration": 1.23,
+          "speechStart": 0,
+          "speechEnd": 1.16,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 24,
+          "label": "I don't do it",
+          "file": "24.wav",
+          "duration": 1.23,
+          "speechStart": 0,
+          "speechEnd": 1.228,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 25,
+          "label": "我们顶峰相见",
+          "file": "25.wav",
+          "duration": 1.37,
+          "speechStart": 0,
+          "speechEnd": 1.286,
+          "defaultOff": true,
+          "answer": true
+        },
+        {
+          "id": 26,
+          "label": "过度健身吸引到的是同性",
+          "file": "26.wav",
+          "duration": 2.21,
+          "speechStart": 0,
+          "speechEnd": 2.21,
+          "defaultOff": false,
+          "answer": false
+        },
+        {
+          "id": 27,
+          "label": "你 420 匹谁有耐心看",
+          "file": "27.wav",
+          "duration": 1.71,
+          "speechStart": 0,
+          "speechEnd": 1.617,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 28,
+          "label": "你这是版本弃子了",
+          "file": "28.wav",
+          "duration": 1.43,
+          "speechStart": 0,
+          "speechEnd": 1.206,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 29,
+          "label": "把简单的事情复杂化",
+          "file": "29.wav",
+          "duration": 1.97,
+          "speechStart": 0,
+          "speechEnd": 1.97,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 30,
+          "label": "薄肌的核心逻辑就是要帅",
+          "file": "30.wav",
+          "duration": 2.284,
+          "speechStart": 0.159,
+          "speechEnd": 2.128,
+          "defaultOff": false,
+          "answer": false
+        },
+        {
+          "id": 31,
+          "label": "我已经是版本之子了",
+          "file": "31.wav",
+          "duration": 2.37,
+          "speechStart": 0.001,
+          "speechEnd": 2.37,
+          "defaultOff": false,
+          "answer": false
+        },
+        {
+          "id": 32,
+          "label": "中国人必须得吃饭",
+          "file": "32.wav",
+          "duration": 1.41,
+          "speechStart": 0,
+          "speechEnd": 1.41,
+          "defaultOff": false,
+          "answer": false
+        },
+        {
+          "id": 33,
+          "label": "主权感就是一个超能力",
+          "file": "33.wav",
+          "duration": 1.89,
+          "speechStart": 0,
+          "speechEnd": 1.89,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 34,
+          "label": "刷牙 is everything",
+          "file": "34.wav",
+          "duration": 1.13,
+          "speechStart": 0,
+          "speechEnd": 1.073,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 35,
+          "label": "丝滑连招",
+          "file": "35.wav",
+          "duration": 0.99,
+          "speechStart": 0,
+          "speechEnd": 0.99,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 36,
+          "label": "给我好好健身",
+          "file": "36.wav",
+          "duration": 1.07,
+          "speechStart": 0,
+          "speechEnd": 1.07,
+          "defaultOff": true,
+          "answer": false
+        },
+        {
+          "id": 37,
+          "label": "好好上分",
+          "file": "37.wav",
+          "duration": 0.83,
+          "speechStart": 0,
+          "speechEnd": 0.739,
+          "defaultOff": true,
+          "answer": false
+        }
+      ]
+    },
+    {
+      "id": "sunpet",
+      "role": "sunpet",
+      "name": "太对了",
+      "tagline": "点我说一句",
+      "source": "SunPet",
+      "audio": "m4a",
+      "downmix": false,
+      "accent": "#ffd479",
+      "sizeSteps": [
+        130,
+        180,
+        240
+      ],
+      "sizeLabels": [
+        "小",
+        "中",
+        "大"
+      ],
+      "defaultSize": 180,
+      "minSize": 120,
+      "maxSize": 260,
+      "motion": "sway",
+      "selectable": true,
+      "captionSize": 12,
+      "sizeMenu": "头像大小",
+      "clipCount": 28,
+      "defaultOnCount": 28,
+      "clips": [
+        {
+          "id": 1,
+          "label": "你说太对了",
+          "file": "01.m4a",
+          "duration": 0.896,
+          "speechStart": 0.232,
+          "speechEnd": 0.873,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 2,
+          "label": "对你说的太对了",
+          "file": "02.m4a",
+          "duration": 0.853,
+          "speechStart": 0,
+          "speechEnd": 0.853,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 3,
+          "label": "对你说的太对了对吧",
+          "file": "03.m4a",
+          "duration": 2.581,
+          "speechStart": 0.382,
+          "speechEnd": 2.471,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 4,
+          "label": "你说的太对了",
+          "file": "04.m4a",
+          "duration": 1.045,
+          "speechStart": 0,
+          "speechEnd": 1.041,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 5,
+          "label": "你讲的太对了",
+          "file": "05.m4a",
+          "duration": 1.088,
+          "speechStart": 0,
+          "speechEnd": 1.019,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 6,
+          "label": "哈哈你说的太对了",
+          "file": "06.m4a",
+          "duration": 2.24,
+          "speechStart": 0.693,
+          "speechEnd": 1.725,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 7,
+          "label": "哎你说太对了",
+          "file": "07.m4a",
+          "duration": 1.643,
+          "speechStart": 0.51,
+          "speechEnd": 1.388,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 8,
+          "label": "对对是太对了对吧",
+          "file": "08.m4a",
+          "duration": 2.923,
+          "speechStart": 0,
+          "speechEnd": 2.855,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 9,
+          "label": "你讲的太对了",
+          "file": "09.m4a",
+          "duration": 1.493,
+          "speechStart": 0.073,
+          "speechEnd": 1.493,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 10,
+          "label": "你说的太对了",
+          "file": "10.m4a",
+          "duration": 1.237,
+          "speechStart": 0.149,
+          "speechEnd": 1.041,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 11,
+          "label": "这这太对了",
+          "file": "11.m4a",
+          "duration": 0.811,
+          "speechStart": 0.053,
+          "speechEnd": 0.797,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 12,
+          "label": "你说的太对了",
+          "file": "12.m4a",
+          "duration": 1.088,
+          "speechStart": 0.248,
+          "speechEnd": 0.945,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 13,
+          "label": "太对了",
+          "file": "13.m4a",
+          "duration": 0.597,
+          "speechStart": 0.105,
+          "speechEnd": 0.494,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 14,
+          "label": "你说太对了",
+          "file": "14.m4a",
+          "duration": 1.003,
+          "speechStart": 0.304,
+          "speechEnd": 1.003,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 15,
+          "label": "你讲的太对了",
+          "file": "15.m4a",
+          "duration": 1.088,
+          "speechStart": 0.286,
+          "speechEnd": 0.945,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 16,
+          "label": "你说的太对了",
+          "file": "16.m4a",
+          "duration": 2.005,
+          "speechStart": 0.039,
+          "speechEnd": 1.2,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 17,
+          "label": "对你讲太对了",
+          "file": "17.m4a",
+          "duration": 2.325,
+          "speechStart": 0.651,
+          "speechEnd": 2.246,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 18,
+          "label": "你说的太对了",
+          "file": "18.m4a",
+          "duration": 1.451,
+          "speechStart": 0.133,
+          "speechEnd": 1.256,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 19,
+          "label": "就就跟这个你刚才讲的太对了",
+          "file": "19.m4a",
+          "duration": 2.219,
+          "speechStart": 0.123,
+          "speechEnd": 2.198,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 20,
+          "label": "对你说的太对了哈",
+          "file": "20.m4a",
+          "duration": 2.347,
+          "speechStart": 0.212,
+          "speechEnd": 2.338,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 21,
+          "label": "你说的太对了对吧",
+          "file": "21.m4a",
+          "duration": 2.133,
+          "speechStart": 0,
+          "speechEnd": 1.629,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 22,
+          "label": "现在啊人生对你说的太对了",
+          "file": "22.m4a",
+          "duration": 3.136,
+          "speechStart": 0.081,
+          "speechEnd": 3.128,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 23,
+          "label": "哎你说的太对了",
+          "file": "23.m4a",
+          "duration": 1.92,
+          "speechStart": 0.659,
+          "speechEnd": 1.755,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 24,
+          "label": "你说的太对了",
+          "file": "24.m4a",
+          "duration": 1.685,
+          "speechStart": 0.238,
+          "speechEnd": 1.109,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 25,
+          "label": "你说的太对了",
+          "file": "25.m4a",
+          "duration": 1.045,
+          "speechStart": 0.202,
+          "speechEnd": 1.045,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 26,
+          "label": "哎你讲的太对了",
+          "file": "26.m4a",
+          "duration": 1.365,
+          "speechStart": 0.278,
+          "speechEnd": 1.365,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 27,
+          "label": "对你说的太对了",
+          "file": "27.m4a",
+          "duration": 1.856,
+          "speechStart": 0.053,
+          "speechEnd": 1.761,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 28,
+          "label": "对你说的太对了对吧",
+          "file": "28.m4a",
+          "duration": 2.304,
+          "speechStart": 0.069,
+          "speechEnd": 2.166,
+          "defaultOff": false,
+          "answer": true
+        }
+      ]
+    },
+    {
+      "id": "fengge",
+      "role": "fengge",
+      "name": "峰哥",
+      "tagline": "点我说一句",
+      "source": "GoodThingPet",
+      "audio": "wav",
+      "downmix": true,
+      "accent": "#a8e6a1",
+      "sizeSteps": [
+        190,
+        260,
+        340
+      ],
+      "sizeLabels": [
+        "小",
+        "中",
+        "大"
+      ],
+      "defaultSize": 260,
+      "minSize": 160,
+      "maxSize": 400,
+      "motion": "squash",
+      "selectable": false,
+      "captionSize": 13,
+      "sizeMenu": "人物大小",
+      "clipCount": 11,
+      "defaultOnCount": 11,
+      "clips": [
+        {
+          "id": 1,
+          "label": "这个是个好事",
+          "file": "01.wav",
+          "duration": 1.075,
+          "speechStart": 0.047,
+          "speechEnd": 0.973,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 2,
+          "label": "这是个好事",
+          "file": "02.wav",
+          "duration": 0.915,
+          "speechStart": 0.083,
+          "speechEnd": 0.839,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 3,
+          "label": "是个好事",
+          "file": "03.wav",
+          "duration": 1.655,
+          "speechStart": 0.131,
+          "speechEnd": 1.595,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 4,
+          "label": "这是个好事啊",
+          "file": "04.wav",
+          "duration": 1.09,
+          "speechStart": 0.047,
+          "speechEnd": 1.011,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 5,
+          "label": "这是一个好事啊",
+          "file": "05.wav",
+          "duration": 1.28,
+          "speechStart": 0.055,
+          "speechEnd": 1.194,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 6,
+          "label": "这是个好事啊",
+          "file": "06.wav",
+          "duration": 1.085,
+          "speechStart": 0.075,
+          "speechEnd": 1.073,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 7,
+          "label": "那这是个好事吗",
+          "file": "07.wav",
+          "duration": 1.507,
+          "speechStart": 0.011,
+          "speechEnd": 1.504,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 8,
+          "label": "挺好的啊",
+          "file": "08.wav",
+          "duration": 0.87,
+          "speechStart": 0.073,
+          "speechEnd": 0.807,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 9,
+          "label": "这是个好事啊",
+          "file": "09.wav",
+          "duration": 1.155,
+          "speechStart": 0.061,
+          "speechEnd": 1.031,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 10,
+          "label": "对你挺好的",
+          "file": "10.wav",
+          "duration": 0.935,
+          "speechStart": 0.137,
+          "speechEnd": 0.873,
+          "defaultOff": false,
+          "answer": true
+        },
+        {
+          "id": 11,
+          "label": "人有欲望是好事",
+          "file": "11.wav",
+          "duration": 1.4,
+          "speechStart": 0.157,
+          "speechEnd": 1.332,
+          "defaultOff": false,
+          "answer": true
+        }
+      ]
+    }
+  ]
+}
