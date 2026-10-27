@@ -7,10 +7,20 @@ import {
   clampSize, SHORT_REPLY_IDS, VOLUME_STEPS,
 } from "./core.js";
 
-const CATALOG_URL = new URL("../assets/pets.json", import.meta.url).href;
+const CATALOG_URL = "assets/pets.json";
 const STORAGE_KEY = "alan-desktop-pets:web:v1";
 const PET_ORDER = ["shaolan", "sunpet", "fengge"];
 const CONCURRENCY = 4;
+
+// The single-file build inlines the catalog and every asset as data URLs and sets
+// this global; the normal build leaves it undefined and loads files by relative path.
+const BUNDLE = typeof window !== "undefined" ? window.__PET_BUNDLE__ || null : null;
+
+// iOS routes Web Audio through the "ambient" session, so the hardware mute switch
+// silences the pets. Asking for the playback session keeps them audible (Safari 16.4+).
+try {
+  if (typeof navigator !== "undefined" && navigator.audioSession) navigator.audioSession.type = "playback";
+} catch { /* older Safari simply keeps the default session */ }
 
 /* ------------------------------------------------------------------ helpers */
 
@@ -103,6 +113,7 @@ class AudioEngine {
     this.gains = new Map();
     this.buffers = new Map(); // petId -> Map(clipId -> AudioBuffer)
     this.current = new Map(); // petId -> { source, gain }
+    this.unlocked = false;
   }
 
   ensureContext() {
@@ -117,6 +128,16 @@ class AudioEngine {
     const context = this.ensureContext();
     if (context.state !== "running") {
       try { await context.resume(); } catch { /* the next gesture retries */ }
+    }
+    // Some iOS/WebView builds only route audio after a buffer is started inside a gesture.
+    if (!this.unlocked && context.state === "running") {
+      try {
+        const source = context.createBufferSource();
+        source.buffer = context.createBuffer(1, 1, context.sampleRate);
+        source.connect(context.destination);
+        source.start(0);
+        this.unlocked = true;
+      } catch { /* harmless */ }
     }
     return context;
   }
@@ -143,7 +164,10 @@ class AudioEngine {
     const workers = new Array(Math.min(CONCURRENCY, clips.length)).fill(null).map(async () => {
       while (clips.length > 0) {
         const clip = clips.shift();
-        const response = await fetch(pet.config.audioBase + clip.file);
+        const url = BUNDLE
+          ? BUNDLE.assets[pet.config.id].sounds[clip.file]
+          : pet.config.audioBase + clip.file;
+        const response = await fetch(url);
         if (!response.ok) throw new Error("HTTP " + response.status + " for " + clip.file);
         const bytes = await response.arrayBuffer();
         const buffer = await context.decodeAudioData(bytes);
@@ -941,7 +965,7 @@ function updateStatus() {
   const loaded = [...pets.values()].reduce((sum, pet) => sum + pet.progress, 0);
   const status = $("#status");
   if (loaded >= total) {
-    status.textContent = "语音已就绪 · 三宠联动已开启";
+    status.textContent = "语音已就绪";
     status.classList.add("ready");
   } else {
     status.textContent = `语音装载中 ${loaded} / ${total}`;
@@ -972,15 +996,14 @@ async function loadPetAudio(pet) {
 /* ---------------------------------------------------------------------- boot */
 
 async function boot() {
-  const response = await fetch(CATALOG_URL);
-  const catalog = await response.json();
+  const catalog = BUNDLE ? BUNDLE.catalog : await (await fetch(CATALOG_URL)).json();
   settings = loadSettings(catalog.pets);
 
   for (const id of PET_ORDER) {
     const config = catalog.pets.find((pet) => pet.id === id);
     if (!config) continue;
     config.audioBase = `assets/${id}/sounds/`;
-    config.face = `assets/${id}/face.png`;
+    config.face = BUNDLE ? BUNDLE.assets[id].face : `assets/${id}/face.png`;
     const pet = createPet(config);
     pet.selector = config.selectable
       ? new PlaybackSelector(config.clips, settings.pets[id])
@@ -990,7 +1013,9 @@ async function boot() {
     bindPet(pet);
   }
 
-  await Promise.all([...pets.values()].map((pet) => pet.image.decode().catch(() => {})));
+  // image.decode() is missing on some older WebViews; never let it break startup.
+  await Promise.all([...pets.values()].map((pet) =>
+    typeof pet.image.decode === "function" ? pet.image.decode().catch(() => {}) : Promise.resolve()));
   refreshScales();
 
   for (const pet of pets.values()) {

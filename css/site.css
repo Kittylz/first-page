@@ -115,14 +115,6 @@ body::after {
 
 body.ready .hud { opacity: 1; transform: none; }
 
-.kicker {
-  margin: 0 0 6px;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 .hud h1 {
   margin: 0 0 8px;
   font-size: clamp(20px, 3.2vw, 27px);
